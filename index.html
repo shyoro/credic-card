@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" class="credit-card">
+        <div class="front">
+            <div class="card-data-row">
+                <div class="brand-name">Cal.</div>
+                <img src="visa.svg" data-logo class="logo">
+            </div>
+            <fieldset class="form-group">
+                <legend>Card Number</legend>
+                <label for="cc1">Card Number</label>
+                <div data-connected-inputs class="cc-inputs horizontal-input-stack">
+                    <input type="tel" maxlength="4" id="cc1" required pattern="[0-9]{4}">
+                    <input type="tel" maxlength="4" required pattern="[0-9]{4}">
+                    <input type="tel" maxlength="4" required pattern="[0-9]{4}">
+                    <input type="tel" maxlength="4" required pattern="[0-9]{4}">
+                </div>
+            </fieldset>
+            <div class="input-row">
+                <div class="form-group name-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <fieldset class="form-group">
+                    <legend>Experation</legend>
+                    <label for="experation-month">Experation</label>
+                    <div class="horizontal-input-stack">
+                        <select id="experation-month" required>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <select id="experation-year" required data-experation-year>
+                          
+                        </select>
+                    </div>
+
+                </fieldset>
+            </div>
+        </div>
+        <div class="back">
+            <div class="stripe"></div>
+            <div class="form-group cvc-group">
+                <label for="cvc" class="cvc">cvc</label>
+                <input type="tel" id="cvc" class="cvc-input" maxlength="3" required />
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
